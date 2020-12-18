@@ -1,0 +1,1354 @@
+{
+  "categories": [
+      {
+          "id": 1,
+          "title": "UIKit",
+          "scenes": [
+              {
+                  "id": 2,
+                  "title": "Overview",
+                  "steps": [
+                      {
+                          "title": "Overview",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit"
+                                      },
+                                      {
+                                          "tag": "ol",
+                                          "txt": "\nAtomic design\nCompound Components vs Config\nDecouple Logic into UIKit + LogicKit \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Atomic design"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Compound Components vs Config"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Decouple Logic into UIKit + LogicKit "
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "h2",
+                                          "txt": "1. Atomic Design"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "Popularised by Brad frost"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "https://bradfrost.com/blog/post/atomic-web-design/",
+                                          "kids": [
+                                              {
+                                                  "tag": "a",
+                                                  "txt": "https://bradfrost.com/blog/post/atomic-web-design/"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "",
+                                          "kids": [
+                                              {
+                                                  "tag": "img",
+                                                  "txt": "https://bradfrost.com/wp-content/uploads/2013/06/atomic-design.png"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag" : "table",
+                                          "kids" : [
+                                              {
+                                                  "tag": "tr",
+                                                  "kids" : [
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Atomic Design"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "UIKit"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Examples"
+                                                      }
+                                                  ]
+                                              },
+                                              {
+                                                  "tag" : "tr",
+                                                  "kids" : [
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Pages"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "01. Portals"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Pages, Modals"
+                                                      }
+                                                  ]
+                                              },
+                                              {
+                                                  "tag" : "tr",
+                                                  "kids" : [
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Organisms"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "02. Layouts"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Journey, Tabs, Standard"
+                                                      }
+                                                  ]
+                                              },
+                                              {
+                                                  "tag" : "tr",
+                                                  "kids" : [
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Molecules"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "03. Compounds"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Forms, Wells, Tables"
+                                                      }
+                                                  ]
+                                              },
+                                              {
+                                                  "tag" : "tr",
+                                                  "kids" : [
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "Atoms"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "04. Elements"
+                                                      },
+                                                      {
+                                                          "tag": "td",
+                                                          "txt": "GEL Generic, React Bootstrap"
+                                                      }
+                                                  ]
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "h2",
+                                          "txt": "2. Compound Components vs Config"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "Problems with Config pattern:"
+                                      },
+                                      {
+                                          "tag": "ul",
+                                          "txt": "\njQuery vs React - house on the cliff analogy \nCallbacks: state doesnt work, need to use refs (imperative vs declarative - no pub/sub)\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "jQuery vs React - house on the cliff analogy "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Callbacks: state doesnt work, need to use refs (imperative vs declarative - no pub/sub)"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "h5",
+                                          "txt": "2.1. Config Example"
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "// 😭 \"Config\" pattern - not this\nconst tabs = [\n  {\n    id: 1,\n    title: 'Home Tab',\n    onClick: () => {\n\n    }\n  },\n  {\n    id: 2,\n    title: 'Search Tab'\n  }\n];\n<Tabs tabs={tabs}>\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "// 😭 \"Config\" pattern - not this\nconst tabs = [\n  {\n    id: 1,\n    title: 'Home Tab',\n    onClick: () => {\n\n    }\n  },\n  {\n    id: 2,\n    title: 'Search Tab'\n  }\n];\n<Tabs tabs={tabs}>\n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "h5",
+                                          "txt": "2.2. Compound Components Example"
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "const [activeTab, setActiveTab] = useState(); \n\n//  🤑  \"Compund compounents\" pattern - yes!\n<Tabs>\n  <TabNav>\n    <Tab tabId={1} onAction={tabAction}>\n        Home Tab\n    </Tab>\n  </TabNav>\n  <TabContent>\n      <TabPane tabId={1}>\n          Body of the Tab\n      </TabPane>\n  </TabContent>\n</Tabs>\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "const [activeTab, setActiveTab] = useState(); \n\n//  🤑  \"Compund compounents\" pattern - yes!\n<Tabs>\n  <TabNav>\n    <Tab tabId={1} onAction={tabAction}>\n        Home Tab\n    </Tab>\n  </TabNav>\n  <TabContent>\n      <TabPane tabId={1}>\n          Body of the Tab\n      </TabPane>\n  </TabContent>\n</Tabs>\n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "React is already declarative. That means that the JSX under the hood is turned into a JSON object ('fiber') and rebuilt in the virtual dom before dommiting to the HTML dom. "
+                                      },
+                                      {
+                                          "tag": "h1",
+                                          "txt": "3. Decouple Logic: UIKit only for styles and conditional rendering"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "Logic has been decoupled and organised into a LogicKit (in the next category)."
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "UI should only be used for: "
+                                      },
+                                      {
+                                          "tag": "ul",
+                                          "txt": "\nstyles and branding \nconditional rendering: passing in props ect to toggle classes or conditionally render elements \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "styles and branding "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "conditional rendering: passing in props ect to toggle classes or conditionally render elements "
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "The LogicKit is used in conjunction with the UIKit to add everything else: "
+                                      },
+                                      {
+                                          "tag": "ul",
+                                          "txt": "\nState Management \nForm validation \nAPI integration\nAuthn/Authz\nAuth Guards with Functional Groups \nRouting \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "State Management "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Form validation "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "API integration"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Authn/Authz"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Auth Guards with Functional Groups "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Routing "
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "id": 3,
+                  "title": "Add Layout",
+                  "steps": [
+                      {
+                          "title": "Add journey",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 2: Add Layout"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "2.1. Add Journey"
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "import {Page, Journey} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n\n    </JourneyNav>\n    <JourneyContent>\n\n    </JourneyContent> \n  </Journey>\n</Page>\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "import {Page, Journey} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n\n    </JourneyNav>\n    <JourneyContent>\n\n    </JourneyContent> \n  </Journey>\n</Page>\n"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Add journey steps",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 2: Add Layout"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "2.2. Add Journey Steps"
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep\n} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n\n        </JourneyStep>\n        <JourneyStep step={1}>\n\n        </JourneyStep>\n        <JourneyStep step={2}>\n\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep\n} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n\n        </JourneyStep>\n        <JourneyStep step={1}>\n\n        </JourneyStep>\n        <JourneyStep step={2}>\n\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "id": 4,
+                  "title": "Add Compounds",
+                  "steps": [
+                      {
+                          "title": "Add well",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 3: Add Compounds"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "3.1. Add Form Wells"
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep,\n  JourneyWell,\n} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={1}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={2}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep,\n  JourneyWell,\n} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={1}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={2}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "3.2. Refactor Form Wells to their own components"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "The JSX is getting a little long, let's refactor the wells to their own components to keep things tidy "
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep,\n  JourneyWell,\n} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={1}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={2}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep,\n  JourneyWell,\n} from './uikit';\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={1}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={2}>\n            <JourneyWell>\n\n            </JourneyWell>\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Refactor well",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 3: Add Compounds"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "3.2. Refactor Form Wells to their own components"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "The JSX is getting a little long, let's refactor the wells to their own components to keep things tidy "
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep,\n  JourneyWell,\n} from './uikit';\n\nimport {\n  ProductWell, \n  AdvisorWell,\n  PersonalDetailsWell,\n} from './\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n            <ProductWell />\n            <AdvisorWell />\n            <PersonalDetailsWell />\n        </JourneyStep>\n        <JourneyStep step={1}>\n            <JourneyWell>\n                <ExampleTable />\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={2}>\n            <JourneyWell>\n                <SummaryWell />\n            </JourneyWell>\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "import {\n  Page, \n  Journey, \n  JourneyNav, \n  JourneyContent, \n  JourneyStep, \n  JourneyNavStep,\n  JourneyWell,\n} from './uikit';\n\nimport {\n  ProductWell, \n  AdvisorWell,\n  PersonalDetailsWell,\n} from './\n\n<Page>\n  <Journey>\n    <JourneyNav>\n        <JourneyNavStep step={0}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={1}>\n\n        </JourneyNavStep>\n        <JourneyNavStep step={2}>\n\n        </JourneyNavStep>\n    </JourneyNav>\n    <JourneyContent>\n        <JourneyStep step={0}>\n            <ProductWell />\n            <AdvisorWell />\n            <PersonalDetailsWell />\n        </JourneyStep>\n        <JourneyStep step={1}>\n            <JourneyWell>\n                <ExampleTable />\n            </JourneyWell>\n        </JourneyStep>\n        <JourneyStep step={2}>\n            <JourneyWell>\n                <SummaryWell />\n            </JourneyWell>\n        </JourneyStep>\n    </JourneyContent> \n  </Journey>\n</Page>\n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "It's important to note that we can still break up and abstract React components, but we should keep them as JSX compound components rather than config's where possible. "
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "export function ProductWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "export function ProductWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "export function AdvisorWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "export function AdvisorWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "export function PersonalDetailsWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "export function PersonalDetailsWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "export function ExampleTable({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "export function ExampleTable({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "export function SummaryWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "export function SummaryWell({children}){\n  return (\n    <JourneyWell>\n      {children}\n    </JourneyWell>\n  );\n} \n"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "id": 5,
+                  "title": "Add Elements",
+                  "steps": [
+                      {
+                          "title": "Overview",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 4: Elements from GEL Genric"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "Now we can grab elements directly from GEL Generic. "
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "GEL Genric wraps up React Bootstrap with our GBST branded styles. So for any documentation the best place to look is https://react-bootstrap.github.io",
+                                          "kids": [
+                                              {
+                                                  "tag": "a",
+                                                  "txt": "https://react-bootstrap.github.io"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "In going straight to React Boostrap we simply by decoupling any tightly coupled logic and validation and we improve performance by removing a dependency. "
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "What we'll build:"
+                                      },
+                                      {
+                                          "tag": "ol",
+                                          "txt": "\nProductWell\nAdvisorWell\nPersonalDetailsWell\nExampleTable\nSummaryWell\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "ProductWell"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "AdvisorWell"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "PersonalDetailsWell"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "ExampleTable"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "SummaryWell"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Product details",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 4: Add Elements"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "4.1. Product Details Well"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Advisor",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 4: Add Elements"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "4.2. Advisor Well"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Personal details",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 4: Add Elements"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "4.3. Personal Details Well"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Table",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 4: Add Elements"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "4.4. Table"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Summary",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "💅 UIKit - Step 4: Add Elements"
+                                      },
+                                      {
+                                          "tag": "h3",
+                                          "txt": "4.5. Summary Well"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "id": 6,
+          "title": "LogicKit",
+          "scenes": [
+              {
+                  "id": 7,
+                  "title": "Overview",
+                  "steps": [
+                      {
+                          "title": "Overview",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "🖖 LogicKit"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "The LogicKit performs the following goals:"
+                                      },
+                                      {
+                                          "tag": "ul",
+                                          "txt": "\nState Management \nForm validation \nAPI integration\nAuthn/Authz\nAuth Guards with Functional Groups \nRouting \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "State Management "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Form validation "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "API integration"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Authn/Authz"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Auth Guards with Functional Groups "
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Routing "
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "The LogicKit acheieves these with the use of three key repeatable and scalable patterns"
+                                      },
+                                      {
+                                          "tag": "ol",
+                                          "txt": "\nProvider Pattern\nReducer Pattern\nHooks Composition Pattern  \n",
+                                          "kids": [
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Provider Pattern"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Reducer Pattern"
+                                              },
+                                              {
+                                                  "tag": "li",
+                                                  "txt": "Hooks Composition Pattern  "
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "h2",
+                                          "txt": "🖖 1. Provider Pattern"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "The Provider pattern performs 2 primary purposes: \n1.1. share state across multiple Components (without props drilling) \n1.2. inject actions into multiple components - similar to how an IoC container would use dependency injection  "
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "",
+                                          "kids": [
+                                              {
+                                                  "tag": "img",
+                                                  "txt": ""
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "It may be helpful to think of this as similar to the role of an AngularJs controller in sharing scope, and actions."
+                                      },
+                                      {
+                                          "tag": "h1",
+                                          "txt": "🖖 2. Reducer Pattern"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "What should the Provider Pattern inject? \nThe simplest way to build a scalable state machine (similar to the DAL) is to use recers  "
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "",
+                                          "kids": [
+                                              {
+                                                  "tag": "img",
+                                                  "txt": ""
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "id": 8,
+                  "title": "JourneyProvider",
+                  "steps": [
+                      {
+                          "title": "Overview",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "pre",
+                                          "txt": "/**\n  * @function ExampleJourney\n  * @desc \n  */\nfunction ExampleJourney() {\n\n    const [journeyStore, journeyActions] = useJourney();\n\n    /**\n      * @step render\n      */\n    return (\n        <Page>\n\n            <pre>\n                {JSON.stringify(journeyStore, null, 4)}\n            </pre>\n            <button onClick={journeyActions.previousStep}> Previous Step </button>\n            <button onClick={journeyActions.nextStep}> Next Step </button>\n            <Journey>\n\n                <Journey.Nav>\n                    <Journey.NavStep step={0} title='Client Details' isActive />\n                    <Journey.NavStep step={1} title='Application Details' />\n                    <Journey.NavStep step={2} title='Summary' />\n                </Journey.Nav>\n                <Journey.Content>\n                    <Journey.Step step={0}>\n\n                    </Journey.Step>\n                    <Journey.Step step={1}>\n\n                    </Journey.Step>\n                    <Journey.Step step={2}>\n\n                    </Journey.Step>\n                </Journey.Content>\n\n\n            </Journey>\n        </Page>\n    );\n\n}\n\nreturn (\n    <JourneyProvider steps={steps}>\n        <ExampleJourney />\n    </JourneyProvider>\n);\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "/**\n  * @function ExampleJourney\n  * @desc \n  */\nfunction ExampleJourney() {\n\n    const [journeyStore, journeyActions] = useJourney();\n\n    /**\n      * @step render\n      */\n    return (\n        <Page>\n\n            <pre>\n                {JSON.stringify(journeyStore, null, 4)}\n            </pre>\n            <button onClick={journeyActions.previousStep}> Previous Step </button>\n            <button onClick={journeyActions.nextStep}> Next Step </button>\n            <Journey>\n\n                <Journey.Nav>\n                    <Journey.NavStep step={0} title='Client Details' isActive />\n                    <Journey.NavStep step={1} title='Application Details' />\n                    <Journey.NavStep step={2} title='Summary' />\n                </Journey.Nav>\n                <Journey.Content>\n                    <Journey.Step step={0}>\n\n                    </Journey.Step>\n                    <Journey.Step step={1}>\n\n                    </Journey.Step>\n                    <Journey.Step step={2}>\n\n                    </Journey.Step>\n                </Journey.Content>\n\n\n            </Journey>\n        </Page>\n    );\n\n}\n\nreturn (\n    <JourneyProvider steps={steps}>\n        <ExampleJourney />\n    </JourneyProvider>\n);\n"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "title": "Journey Provider",
+                          "gitData": {},
+                          "windowSettings": {
+                              "description": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "0px",
+                                  "width": "45%",
+                                  "height": "100%",
+                                  "transitions": [],
+                                  "isMin": false
+                              },
+                              "code": {
+                                  "isClosed": false,
+                                  "top": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "80%",
+                                  "transitions": []
+                              },
+                              "terminal": {
+                                  "isClosed": true,
+                                  "bottom": "0px",
+                                  "left": "50%",
+                                  "width": "45%",
+                                  "height": "20%",
+                                  "transitions": []
+                              }
+                          },
+                          "timeline": [
+                              {
+                                  "id": 1,
+                                  "panel": "description",
+                                  "start": 0,
+                                  "duration": 5000,
+                                  "description": [
+                                      {
+                                          "tag": "h1",
+                                          "txt": "🖖 LogicKit - useJourney"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "Wrap the components you want to share journey store and actions with the JourneyProvider"
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "Under the hood the store/actions use the reducer pattern to pub/sub push store updates to all components"
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "/**\n* @pattern Provider Pattern \n* @desc\n*     Wrap the components you want to share journey store and actions with the JourneyProvider\n\n    Under the hood the store/actions use the reducer pattern to pub/sub push store updates to all components \n*/\nconst App = () => (\n    <JourneyProvider steps={initialSteps}>\n        <ExampleJourney />\n    </JourneyProvider>\n);\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "/**\n* @pattern Provider Pattern \n* @desc\n*     Wrap the components you want to share journey store and actions with the JourneyProvider\n\n    Under the hood the store/actions use the reducer pattern to pub/sub push store updates to all components \n*/\nconst App = () => (\n    <JourneyProvider steps={initialSteps}>\n        <ExampleJourney />\n    </JourneyProvider>\n);\n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "Any component that is a child of the JourneyProvider can now inject the state/actions at any time with one line: ",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "JourneyProvider"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "const [journeyStore, journeyActions] = useJourney();\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "const [journeyStore, journeyActions] = useJourney();\n"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "tag": "p",
+                                          "txt": "As we see in the example below: "
+                                      },
+                                      {
+                                          "tag": "pre",
+                                          "txt": "/**\n* @component ExampleJourney\n* @desc \n*   inject the store and actions from the JourneyProvider \n*/\nexport function ExampleJourney() {\n\n    const [journeyStore, journeyActions] = useJourney();\n\n    /**\n      * @step render\n      */\n    return (\n        <Page>\n\n            <pre>\n                {JSON.stringify(journeyStore, null, 4)}\n            </pre>\n            <button onClick={journeyActions.previousStep}> Previous Step </button>\n            <button onClick={journeyActions.nextStep}> Next Step </button>\n            <Journey>\n\n                <JourneyNav>\n                    <JourneyNavStep step={0} title='Client Details' isActive />\n                    <JourneyNavStep step={1} title='Application Details' />\n                    <JourneyNavStep step={2} title='Summary' />\n                </JourneyNav>\n                <JourneyContent>\n                    <JourneyStep step={0}>\n\n                    </JourneyStep>\n                    <JourneyStep step={1}>\n\n                    </JourneyStep>\n                    <JourneyStep step={2}>\n\n                    </JourneyStep>\n                </JourneyContent>\n\n\n            </Journey>\n        </Page>\n    );\n\n}\n",
+                                          "kids": [
+                                              {
+                                                  "tag": "code",
+                                                  "txt": "/**\n* @component ExampleJourney\n* @desc \n*   inject the store and actions from the JourneyProvider \n*/\nexport function ExampleJourney() {\n\n    const [journeyStore, journeyActions] = useJourney();\n\n    /**\n      * @step render\n      */\n    return (\n        <Page>\n\n            <pre>\n                {JSON.stringify(journeyStore, null, 4)}\n            </pre>\n            <button onClick={journeyActions.previousStep}> Previous Step </button>\n            <button onClick={journeyActions.nextStep}> Next Step </button>\n            <Journey>\n\n                <JourneyNav>\n                    <JourneyNavStep step={0} title='Client Details' isActive />\n                    <JourneyNavStep step={1} title='Application Details' />\n                    <JourneyNavStep step={2} title='Summary' />\n                </JourneyNav>\n                <JourneyContent>\n                    <JourneyStep step={0}>\n\n                    </JourneyStep>\n                    <JourneyStep step={1}>\n\n                    </JourneyStep>\n                    <JourneyStep step={2}>\n\n                    </JourneyStep>\n                </JourneyContent>\n\n\n            </Journey>\n        </Page>\n    );\n\n}\n"
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              },
+                              {
+                                  "id": 2,
+                                  "panel": "code",
+                                  "start": 1000,
+                                  "duration": 3000,
+                                  "code": {
+                                      "template": "category-02-logickit/scene-02-useJourney/step-02-JourneyProvider/code/01-App.hbs",
+                                      "template_data": {
+                                          "partial_1": "{{partial_1}}"
+                                      },
+                                      "partial_sections": [
+                                          {
+                                              "partial_id": "partial_1",
+                                              "start": 1500,
+                                              "duration": 2500,
+                                              "template": "category-02-logickit/scene-02-useJourney/step-02-JourneyProvider/code/01-App.js.partials/partial_1.hbs",
+                                              "template_data": {}
+                                          }
+                                      ],
+                                      "output": "01-App.js"
+                                  }
+                              },
+                              {
+                                  "id": 3,
+                                  "panel": "code",
+                                  "start": 3500,
+                                  "duration": 6000,
+                                  "code": {
+                                      "template": "category-02-logickit/scene-02-useJourney/step-02-JourneyProvider/code/02-ExampleJourney.hbs",
+                                      "template_data": {
+                                          "part1": "{{part1}}",
+                                          "part2": "{{part2}}",
+                                          "part3": "{{part3}}",
+                                          "part4": "{{part4}}"
+                                      },
+                                      "partial_sections": [
+                                          {
+                                              "partial_id": "part1",
+                                              "start": 3500,
+                                              "duration": 2000,
+                                              "template": "category-02-logickit/scene-02-useJourney/step-02-JourneyProvider/code/02-ExampleJourney.js.partials/part1.hbs",
+                                              "template_data": {}
+                                          },
+                                          {
+                                              "partial_id": "part2",
+                                              "start": 5500,
+                                              "duration": 1000,
+                                              "template": "category-02-logickit/scene-02-useJourney/step-02-JourneyProvider/code/02-ExampleJourney.js.partials/part2.hbs",
+                                              "template_data": {}
+                                          },
+                                          {
+                                              "partial_id": "part3",
+                                              "start": 6500,
+                                              "duration": 1000,
+                                              "template": "category-02-logickit/scene-02-useJourney/step-02-JourneyProvider/code/02-ExampleJourney.js.partials/part3.hbs",
+                                              "template_data": {}
+                                          },
+                                          {
+                                              "partial_id": "part4",
+                                              "start": 7500,
+                                              "duration": 2000,
+                                              "template": "category-02-logickit/scene-02-useJourney/step-02-JourneyProvider/code/02-ExampleJourney.js.partials/part4.hbs",
+                                              "template_data": {}
+                                          }
+                                      ],
+                                      "output": "02-ExampleJourney.js"
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}

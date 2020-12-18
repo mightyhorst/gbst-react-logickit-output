@@ -1,12 +1,20 @@
 import React from "react";
-import { MemoryRouter, Switch, Route } from "react-router-dom";
 
-import { LinkContainer } from "react-router-bootstrap";
+/**
+ * @requires Router
+ */
+import { HashRouter as Router } from "react-router-dom";
+import * as routes from "./routes.json";
+
+/**
+ * @requires Components
+ */
+import { AppNav, AppRoutes } from "./";
 
 export const App = () => (
-  <>
-
-  </>
+  <Router>
+    <AppNav routes={routes} />
+    <AppRoutes routes={routes} />
+  </Router>
 );
-
 export default App;
